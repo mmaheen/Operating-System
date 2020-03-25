@@ -1,0 +1,11 @@
+clear
+echo Enter the first number
+read a
+echo Enter the second number
+read b
+c=$a
+a=$b
+b=$c
+echo After swapping
+echo first number is $a
+echo second number is $b

@@ -1,0 +1,20 @@
+clear
+echo Enter cost price of the item
+read cp
+echo Enter selling price of the item
+read sp
+if [ $sp -gt $cp ]
+then
+echo Seller had made profit
+profit=‘echo $sp - $cp | bc’
+echo Profit = $profit
+else
+if [ $cp -gt $sp ]
+then
+echo Seller has incurred loss
+loss=‘echo $cp - $sp | bc’
+echo Loss = $loss
+else
+echo No profit, no loss
+fi
+fi
